@@ -1,0 +1,201 @@
+/* ----- MINECRAFT FONT IMPORT ----- */
+
+@font-face {
+  font-family: 'MinecraftFont';
+  src: url('https://cdn.jsdelivr.net/gh/Timtaran/Timtaran.github.io/BetterDiscord/minecraft.ttf') format('truetype');
+}
+
+:root {
+  --Custom-Font: 'MinecraftFont';
+}
+
+/* ----- STYLING DE LA PAGE ----- */
+
+.disclaimer {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 18.5px;
+  border-left: 3px solid #00ff00;
+  background-color: #000000c5;
+  color: #ffffff;
+}
+
+.disclaimer em {
+  font-style: italic;
+  color: #cecece;
+}
+
+body {
+  background-image: url(https://www.chromethemer.com/download/hd-wallpapers/minecraft-3840x2160.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--Custom-Font) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+  color: #fff;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  margin: 2em;
+  border-left: 3px solid #00ff00;
+  background-color: #000000c5;
+  color: #ffffff;
+  outline: none;
+  width: 80%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #ffffff;
+  font-family: var(--Custom-Font) !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--Custom-Font) !important;
+}
+
+/* ----- RESULTATS DE LA RECHERCHE ----- */
+
+#resultats {
+  border-left: 3px solid #00ff00;
+  background-color: #000000c5;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  font-family: var(--Custom-Font) !important;
+}
+
+#liste-mots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2em;
+}
+
+#liste-mots div {
+  padding: 8px 12px;
+  color: #fff;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+#liste-mots div:hover {
+  transform: scale(1.05);
+}
+
+mark {
+  background-color: rgba(0, 255, 0, 0.274);
+  color: #fff;
+  border-radius: 0.3em;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    color: #cecece;
+}
+
+footer span {
+    color: #3eff6e;
+    font-weight: bolder;
+}
+
+/* ----- SIDEBAR NAVIGATION MINECRAFT THEME ----- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: left 0.3s ease;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 255, 0, 0.3);
+  border-right: 2px solid #00ff00;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.sidebar-header h3 {
+  color: #00ff00;
+  margin: 0;
+  font-size: 1.2em;
+  font-family: var(--Custom-Font) !important;
+}
+
+.sidebar-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+  font-family: var(--Custom-Font) !important;
+}
+
+.sidebar-nav a:hover {
+  color: #00ff00;
+  padding-left: 10px;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.sidebar-nav a.active {
+  color: #00ff00;
+  border-left: 3px solid #00ff00;
+  padding-left: 10px;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.sidebar-toggle:hover {
+  background: rgba(0, 255, 0, 0.1);
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/*
+      /\_/\  
+     ( o.o ) 
+      > ^ <  "pourquoi tu regardes par ici toi ?" 
+*/

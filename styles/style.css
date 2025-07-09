@@ -1,0 +1,214 @@
+/* ----- STYLING DE LA PAGE ----- */
+
+.disclaimer {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 18.5px;
+  border-left: 3px solid #008cff;
+  background-color: #f9f9f934;
+  color: #ffffff;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.342);
+}
+
+.disclaimer em {
+  font-style: italic;
+  color: #cecece;
+}
+
+body {
+  background-image: url(https://github.com/dharmx/walls/blob/main/stalenhag/a_group_of_people_walking_in_a_field_with_a_round_object_in_the_foreground.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+  color: #fff;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 10px 15px;
+  margin: 2em;
+  background-color: rgba(249, 249, 249, 0.103);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0);
+  outline: none;
+  width: 80%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  border-left: 3px solid #008cff;
+  
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----- RESULTATS DE LA RECHERCHE ----- */
+
+#resultats {
+  background-color: #f9f9f934;
+  border-left: 3px solid #008cff;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.342);
+}
+
+
+#liste-mots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2em;
+}
+
+#liste-mots div {
+  padding: 8px 12px;
+  color: #fff;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+#liste-mots div:hover {
+  transform: scale(1.05);
+}
+
+mark {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: #fff;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+  margin-top: 2em;
+  color: #cecece;
+}
+
+span {
+  color: #008cff;
+  font-weight: bolder;
+}
+
+/* ----- SIDEBAR NAVIGATION ----- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: left 0.3s ease;
+  padding: 20px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  border-right: 2px solid #008cff;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.sidebar-header h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.sidebar-nav {
+  padding: 0 20px;
+}
+
+.sidebar-nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.sidebar-nav a:hover {
+  color: #008cff;
+  padding-left: 10px;
+}
+
+.sidebar-nav a.active {
+  color: #008cff;
+  border-left: 3px solid #008cff;
+  padding-left: 10px;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background-color: #f9f9f934;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.342);
+}
+
+.sidebar-toggle:hover {
+  color: #008cff;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*
+      /\_/\  
+     ( o.o ) 
+      > ^ <  "pourquoi tu regardes par ici toi ?" 
+*/

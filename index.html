@@ -3,18 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>👑 SUB 1 | version test</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>👑 SUB 1 | version normal</title>
+    <link rel="stylesheet" href="styles/style.css" />
     <meta property="og:title" content="👑 SUB 1 | Word Finder" />
-    <meta property="og:description" content="Liste des syllabe sub 1 en français" />
+    <meta property="og:description" content="Site cool pour WordBomb.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/153329824?v=4&size=64" />
+    <meta property="og:image" content="" />
     <meta property="og:url" content="https://unrk.github.io/WORDBOMB/" />
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="theme-color" content="#1a1a1a" />
   </head>
   <body>
+
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+
+    <div class="sidebar-overlay" onclick="closeSidebar()"></div>
+
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h3>Memoir</h3>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" onclick="switchTheme('normal')" id="nav-normal" class="active">Version Normale</a>
+        <a href="#" onclick="switchTheme('minecraft')" id="nav-minecraft">Version Minecraft</a>
+        <a href="https://github.com/unrk/WORDBOMB" target="_blank">Code source</a>
+      </nav>
+    </div>
+
     <p class="disclaimer">
-      Coucou c'est Memoir, petit disclaimer :
+      Coucou c'est <span>Memoir</span>, petit disclaimer :
       <em
         >Je n'encourage personne à tricher sur wordbomb avec ce site. Je ne suis
         pas responsable de son utilisation.</em
@@ -34,7 +52,7 @@
       <div id="liste-mots"></div>
       <footer><span>@memolr</span> on discord</footer>
     </div>
-    <script src="script.js"></script>
+    <script src="javascript/script.js"></script>
   </body>
 
   <!--
