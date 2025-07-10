@@ -53,14 +53,13 @@ input {
   font-size: 1.2em;
   padding: 10px 15px;
   margin: 2em;
-  border-left: 3px solid #00ff00;
-  background-color: #000000c5;
-  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: #fff;
   outline: none;
   width: 80%;
   max-width: 500px;
   transition: all 0.3s ease;
-  border-left: 3px solid #ffffff;
+  border-left: 3px solid #00ff00;
   font-family: var(--Custom-Font) !important;
 }
 

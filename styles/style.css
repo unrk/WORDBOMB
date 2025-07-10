@@ -53,7 +53,6 @@ input {
   max-width: 500px;
   transition: all 0.3s ease;
   border-left: 3px solid #008cff;
-  
 }
 
 input::placeholder {

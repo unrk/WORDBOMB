@@ -3,7 +3,7 @@
 let mots = [];
 let currentTheme = 'normal';
 
-async function chargerMots(listPath = 'lists/sub1.txt') {
+async function chargerMots(listPath = 'lists/SUB1.txt') {
     try {
         const response = await fetch(listPath);
         const text = await response.text();
@@ -63,13 +63,13 @@ function switchTheme(theme) {
         themeCSS.href = 'styles/minecraft.css';
         document.title = '👑 SUB 1 | version minecraft';
         document.getElementById('nav-minecraft').classList.add('active');
-        chargerMots('lists/mcsub1.txt');
+        chargerMots('lists/MCSUB1.txt');
         currentTheme = 'minecraft';
     } else {
         themeCSS.href = 'styles/style.css';
         document.title = '👑 SUB 1 | version normal';
         document.getElementById('nav-normal').classList.add('active');
-        chargerMots('lists/sub1.txt');
+        chargerMots('lists/SUB1.txt');
         currentTheme = 'normal';
     }
     
